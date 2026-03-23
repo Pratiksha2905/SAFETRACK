@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D32F2F"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/tvEmergencyTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Are you safe?"
+        android:textColor="#FFFFFF"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="80dp"/>
+
+    <TextView
+        android:id="@+id/tvTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="60"
+        android:textColor="#FFFFFF"
+        android:textSize="80sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/tvEmergencyTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seconds until emergency alert"
+        android:textColor="#FFCDD2"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/tvTimer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+        android:id="@+id/btnImSafe"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="I'M SAFE"
+        android:textSize="20sp"
+        android:backgroundTint="#2E7D32"
+        app:layout_constraintBottom_toTopOf="@id/btnNeedHelp"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id/btnNeedHelp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="NEED HELP NOW"
+        android:textSize="20sp"
+        android:backgroundTint="#B71C1C"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="40dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
